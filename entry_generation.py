@@ -29,7 +29,6 @@ Long or short, it's all good.
             with open('logs\\logs.json', 'r') as f:
                 logs = f.read()
             logs = json.loads(logs)
-            print(logs)
             logs["contents"].append({"path": f'{datetime.datetime.today().strftime("%Y-%m-%d")}.md', "entry": entry, "timestamp": datetime.datetime.now().timestamp()})
             json.dump(logs, open('logs\\logs.json', 'w+'), indent=4)
 
