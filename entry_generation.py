@@ -33,7 +33,7 @@ Long or short, it's all good.
         # actual journaling part
         
         with open(f'logs\\archieve\\{datetime.datetime.today().strftime("%Y-%m-%d")}.md', 'a') as f:
-            f.write(f'\n---\nENTRY {entry}\n---\n')
+            f.write(f'\n---\nENTRY {entry}\n---\n\n')
         logs = json.loads(logs)
         logs["entry"] += 1
         json.dump(logs, open('logs\\logs.json', 'w+'), indent=4)
