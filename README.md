@@ -39,3 +39,16 @@ You can install this using pip,
 ```
 pip install ja_cli
 ```
+
+# HOW TO RUN
+Then, using
+```
+_ja
+```
+You can run _JA and it would immedietly bring you to the entry mode, it's default mode.
+Then, by typing q on a new line. It would get you into it's idle mode.
+In idle mode you can do lots of commands which are listed below:
+COMMANDS:
+- [j] Start new journal entry
+- [s] View past journal entries
+- [q] Quit program
