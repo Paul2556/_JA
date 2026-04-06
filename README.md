@@ -1,4 +1,4 @@
-"""
+```
          _   _
         | | / \
      _  | |/ _ \
@@ -6,7 +6,7 @@
  ____\___/_/   \_\
 |_____|
 ᵥ.₆
-"""
+```
 This is a journalling app made by me :D
 Paul
 
