@@ -43,7 +43,7 @@ try:
 	# more than a day so generate new one
 	if last_entry_time is None or datetime.datetime.now().timestamp() - last_entry_time > 24 * 60 * 60:
 		logs = json.loads(logs)
-		logs["entry"] += 1
+		logs["entry"] = 1
 		json.dump(logs, open('logs\\logs.json', 'w+'), indent=4)
 		generate_journal_entry()
 		last_entry_time = datetime.datetime.now().timestamp()
