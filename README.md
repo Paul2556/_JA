@@ -28,7 +28,14 @@ The new entries would automatically be generated every time you exit and open th
 It includes basic features like:
 - Automatic daily journal creation
 - Markdown (*w/ terminal that supports rendering*)
-But also, it includes AI features like:
-- Automatic tag assigning
+
+But also, it includes AI features like (*WIP*):
+- Automatic tag assigning 
 - Trends
 - Visual graphs for most use tags _etc_
+
+# INSTALLATION
+You can install this using pip,
+```
+pip install ja_cli
+```
