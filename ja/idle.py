@@ -1,7 +1,7 @@
 import datetime
-from journal import generate_journal_entry
-from log_utils import load_logs
-from config import ARCHIVE_PATH
+from ja.journal import generate_journal_entry
+from ja.log_utils import load_logs
+from ja.config import ARCHIVE_PATH
 
 def find_entry():
     logs = load_logs()

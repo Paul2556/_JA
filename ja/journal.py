@@ -1,6 +1,6 @@
 import datetime
-from config import ARCHIVE_PATH
-from log_utils import load_logs, save_logs
+from ja.config import ARCHIVE_PATH
+from ja.log_utils import load_logs, save_logs
 
 def is_new_day(last_entry_time):
     if last_entry_time == 0:

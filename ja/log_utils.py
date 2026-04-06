@@ -1,8 +1,8 @@
 import json
-from config import LOG_PATH, ARCHIVE_PATH
+from ja.config import LOG_PATH, ensure_dirs
 
 def init_logs():
-    ARCHIVE_PATH.mkdir(parents=True, exist_ok=True)
+    ensure_dirs()
 
     if not LOG_PATH.exists():
         with open(LOG_PATH, 'w') as f:

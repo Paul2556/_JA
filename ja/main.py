@@ -1,8 +1,8 @@
 import datetime
 import random
-from journal import generate_journal_entry, is_new_day
-from idle import passive_idle
-from log_utils import init_logs, load_logs, save_logs
+from ja.journal import generate_journal_entry, is_new_day
+from ja.idle import passive_idle
+from ja.log_utils import init_logs, load_logs, save_logs
 import textwrap
 def main():
 	init_logs()
