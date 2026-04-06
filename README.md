@@ -3,7 +3,7 @@
         | | / \     |  _ \   / \ \      / | | | | | \ | |  ___|_ _| | |_   _| ____| ____|  _ \  | |   |_ _|  ___| ____|
      _  | |/ _ \    | |_) | / _ \ \ /\ / /  | | | |  \| | |_   | || |   | | |  _| |  _| | | | | | |    | || |_  |  _|
     | |_| / ___ \   |  _ < / ___ \ V  V /   | |_| | |\  |  _|  | || |___| | | |___| |___| |_| | | |___ | ||  _| | |___
- ____\___/_/   \_|  |_| \_/_/   \_\_/\_/    \___/ |_| \_|_|   |___|_____|_| |_____|_____|____/   |_____|___|_|   |_____|
+ ____\___/_/   \_|  |_| \_/_/   \_\_/\_/     \___/|_| \_|_|   |___|_____|_| |_____|_____|____/  |_____|___|_|   |_____|
 |_____|
 ᵥ.₆
 ```
@@ -14,16 +14,16 @@ It's a very simple TUI journaling app that emphazises on raw and unfiltered thou
 Techically it supports markdown using warp terminal which is the terminal but it's not built in.
 All of the journaling entries are in .md though.
 Also, the _JA includes entry numbers like this:
-
-> ---
-> ENTRY 1
-> ---
-> *actual entry goes here*
-> ---
-> ENTRY 2
-> ---
-> *entry 2 goes here*
-
+```
+---
+ENTRY 1
+---
+*actual entry goes here*
+---
+ENTRY 2
+---
+*entry 2 goes here*
+```
 The new entries would automatically be generated every time you exit and open the program or when you go into idle mode and come back.
 
 It includes basic features like:
