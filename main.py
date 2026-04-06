@@ -1,5 +1,5 @@
 from dependencies import datetime, json, logs, random
-from entry_generation import generate_journal_entry
+from entry_generation import generate_journal_entry, is_new_day
 last_entry_time = json.loads(logs)['last_entry_time']
 greetings = [
     "These pages are waiting.",
@@ -31,7 +31,7 @@ print("""         _   _
     | |_| / ___ \\
  ____\\___/_/   \\_\\
 |_____|
-ᵥ.₅""")
+ᵥ.₆""") #! Change the version number ONLY when you make big changes.
 if datetime.datetime.now().hour < 12:
 	print(f"Good morning, Paul. {greetings[random.randint(0, len(greetings) - 1)]}")
 elif datetime.datetime.now().hour < 18:
@@ -41,7 +41,7 @@ else:
 
 try:
 	# more than a day so generate new one
-	if last_entry_time is None or datetime.datetime.now().timestamp() - last_entry_time > 24 * 60 * 60:
+	if last_entry_time is None or is_new_day(last_entry_time):
 		logs = json.loads(logs)
 		logs["entry"] = 1
 		json.dump(logs, open('logs\\logs.json', 'w+'), indent=4)

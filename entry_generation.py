@@ -1,5 +1,13 @@
 from dependencies import datetime, json
 import idle_mode, keyboard
+def is_new_day(last_entry_time):
+    if last_entry_time is None:
+        return True
+
+    last_date = datetime.datetime.fromtimestamp(last_entry_time).date()
+    current_date = datetime.datetime.now().date()
+
+    return current_date > last_date
 def generate_journal_entry():
     with open('logs\\logs.json', 'r') as f:
         logs = f.read()
