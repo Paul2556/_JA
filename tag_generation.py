@@ -1,4 +1,4 @@
-from dependencies import chat, ChatResponse, datetime
+from init import chat, ChatResponse, datetime
 
 with open(f'logs\\archieve\\{datetime.datetime.today().strftime("%Y-%m-%d")}.md', 'r') as f:
     journal_entry = f.read()

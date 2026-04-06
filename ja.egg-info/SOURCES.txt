@@ -1,0 +1,12 @@
+README.md
+config.py
+idle.py
+journal.py
+log_utils.py
+main.py
+setup.py
+ja.egg-info/PKG-INFO
+ja.egg-info/SOURCES.txt
+ja.egg-info/dependency_links.txt
+ja.egg-info/entry_points.txt
+ja.egg-info/top_level.txt
