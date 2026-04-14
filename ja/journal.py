@@ -37,12 +37,11 @@ Type 'q' on a new line to exit.
         if first_line:
             with open(file_path, 'a') as f:
                 f.write(f'\n---\nENTRY {entry}\n---\n\n')
-            logs["contents"].append({
-                "path": f"{date_str}.md",
-                "entry": entry,
-                "timestamp": datetime.datetime.now().timestamp()
-            })
-            logs["entry"] += 1
+            if is_new_day(logs["last_entry_time"]) :
+                logs["contents"].append({
+                    "path": f"{date_str}.md",
+                    "timestamp": datetime.datetime.now().timestamp()
+                })
             first_line = False
         with open(file_path, 'a') as f:
             f.write(line + '\n')

@@ -1,6 +1,6 @@
 [project]
 name = "ja-CLI"
-version = "0.71"
+version = "0.72"
 description = "Minimal journaling CLI for raw thought capture"
 authors = [{name = "Paul"}]
 readme = "README.md"
