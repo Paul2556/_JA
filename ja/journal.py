@@ -38,7 +38,7 @@ Type 'q' on a new line to exit.
             with open(file_path, 'a') as f:
                 f.write(f'\n---\nENTRY {entry}\n---\n\n')
             if is_new_day(logs["last_entry_time"]) :
-                logs["contents"].append({
+                logs["contents"].insert(0, {
                     "path": f"{date_str}.md",
                     "timestamp": datetime.datetime.now().timestamp()
                 })
