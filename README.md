@@ -5,14 +5,12 @@
     | |_| / ___ \   |  _ < / ___ \ V  V /   | |_| | |\  |  _|  | || |___| | | |___| |___| |_| | | |___ | ||  _| | |___
  ____\___/_/   \_|  |_| \_/_/   \_\_/\_/     \___/|_| \_|_|   |___|_____|_| |_____|_____|____/  |_____|___|_|   |_____|
 |_____|
-ᵥ.₆
+ᵥ.₇
 ```
-This is a journalling app made by me :D
-Paul
 
-It's a very simple TUI journaling app that emphazises on raw and unfiltered thoughts rather than compressed or reviewed thoughts.
-All of the journaling entries are in .md though.
-Also, _JA includes entry numbers like this:
+This is a journaling app made by me :D Paul
+
+It's a very simple TUI journaling app that emphasizes raw and unfiltered thoughts rather than compressed or overly reviewed thoughts. All of the journal entries are stored in .md files. Also, _JA includes entry numbers like this:
 ```
 ---
 ENTRY 1
@@ -23,32 +21,23 @@ ENTRY 2
 ---
 *entry 2 goes here*
 ```
-The new entries would automatically be generated every time you exit and open the program or when you go into idle mode and come back.
+
+New entries are automatically generated every time you exit and reopen the program, or when you go into idle mode and come back.
 
 It includes basic features like:
-- Automatic daily journal creation
-- Markdown (*w/ terminal that supports rendering*)
 
-But also, it includes AI features like (*WIP*):
-- Automatic tag assigning 
+- Automatic daily journal creation
+- Markdown (with a terminal that supports rendering)
+
+But it also includes AI features (WIP):
+
+- Automatic tag assigning
 - Trends
-- Visual graphs for most use tags _etc_
+- Visual graphs for most used tags, etc.
 
 # INSTALLATION
-You can install this using pip,
+
+You can install this using pip:
 ```
 pip install ja_cli
 ```
-
-# HOW TO RUN
-Then, using
-```
-_ja
-```
-You can run _JA and it would immedietly bring you to the entry mode, it's default mode.
-Then, by typing q on a new line. It would get you into it's idle mode.
-In idle mode you can do lots of commands which are listed below:
-COMMANDS:
-- [j] Start new journal entry
-- [s] View past journal entries
-- [q] Quit program
